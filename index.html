@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gutter</title>
+    <link href="bower_components/w2ui/w2ui-1.4.2.css" rel="stylesheet" />
+    <link href="site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grid with gutter</h1>
+        <div id="gutter"></div>
+        <div id="grid1"></div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/w2ui/w2ui-1.4.2.js"></script>
+
+    <script>
+        $(function () {
+            var grid1 = {
+                name: 'grid',
+                fixedBody: true,
+                columns: [
+                    { field: 'date', caption: 'Date', size: '100px', resizable: true },
+                    { field: 'unmatched', caption: 'unmatched', size: '70px', resizable: true },
+                    { field: 'failed', caption: 'failed', size: '70px', resizable: true },
+                    { field: 'manual', caption: 'manual', size: '70px', resizable: true },
+                    { field: 'flagged', caption: 'flagged', size: '70px', resizable: true },
+                    { field: 'succeeded', caption: 'succeeded', size: '70px', resizable: true },
+                    { field: 'ignored', caption: 'ignored', size: '70px', resizable: true },
+                    { field: 'edited', caption: 'edited', size: '70px', resizable: true },
+                ],
+                records: [
+                    { recid: 1, date: '2015-01-01', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 2, date: '2015-01-02', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 3, date: '2015-01-03', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 4, date: '2015-01-04', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 5, date: '2015-01-05', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 6, date: '2015-01-06', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 7, date: '2015-01-07', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 8, date: '2015-01-08', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    {
+                        recid: 9, date: '2015-01-09', unmatched: 0, failed: 5, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0,
+                        style: 'background-color: #ff5959', editable: false
+                    },
+                    { recid: 10, date: '2015-01-10', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 11, date: '2015-01-11', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 12, date: '2015-01-12', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 13, date: '2015-01-13', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 14, date: '2015-01-14', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 15, date: '2015-01-15', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 16, date: '2015-01-16', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 17, date: '2015-01-17', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 18, date: '2015-01-18', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    {
+                        recid: 19, date: '2015-01-19', unmatched: 2, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0,
+                        style: 'background-color: #f75ece', editable: false
+                    },
+                    { recid: 20, date: '2015-01-20', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 21, date: '2015-01-21', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 22, date: '2015-01-22', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 23, date: '2015-01-23', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 24, date: '2015-01-24', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 25, date: '2015-01-25', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 26, date: '2015-01-26', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 27, date: '2015-01-27', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    { recid: 28, date: '2015-01-28', unmatched: 0, failed: 0, manual: 0, flagged: 0, succeeded: 0, ignored: 0, edited: 0  },
+                    {
+                        recid: 29, date: '2015-01-29', unmatched: 0, failed: 0, manual: 1, flagged: 0, succeeded: 0, ignored: 0, edited: 0,
+                        style: 'background-color: #e27b14', editable: false
+                    },
+                ]
+            };
+            $('#grid1').w2grid(grid1);
+        });
+    </script>
+</body>
+
+</html>

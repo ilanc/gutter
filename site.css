@@ -1,0 +1,13 @@
+#gutter {
+    float: left;
+    width: 20px;
+    height: 272px; /*300px - 26px margin-top - 2px border-top&bottom */
+    border: 1px black solid;
+    margin-top: 26px;
+}
+#grid1 {
+    float: left;
+    margin-left: 10px;
+    width: 500px;
+    height: 300px;
+}

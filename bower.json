@@ -1,0 +1,7 @@
+{
+    "name": "Gutter",
+    "dependencies": {
+        "jquery": "~2.1.0",
+        "w2ui": "~1.4.2"
+    }
+}
